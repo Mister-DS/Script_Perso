@@ -19,68 +19,72 @@
   ```bash
   pip install -r requirements.txt
   
-2. Préparation de l'environnement
+### 2. Préparation de l'environnement
 Placez le fichier main.py et lib.py ainsi que tous les fichiers CSV avec lesquels vous souhaitez travailler dans le même répertoire.
-3. Lancer le script
+
+### 3. Lancer le script
 Exécutez le script via un terminal ou une invite de commande :
 
-bash
+
+```bash
 Copier le code
 python main.py
 Guide d'utilisation
 Une fois le script lancé, vous verrez l'invite suivante : Script_Perso:. À partir de là, vous pouvez utiliser les commandes suivantes :
 
-1. Quitter le Shell
+### 1. Quitter le Shell
 Commande : exit
 
 Description : Quitte le shell Script_Perso.
 
 Exemple :
 
-bash
+```bash
 Copier le code
 Script_Perso: exit
-2. Ajouter un fichier CSV
+
+### 2. Ajouter un fichier CSV
 Commande : add
 
 Description : Liste les fichiers CSV disponibles dans le répertoire courant et fusionne le fichier sélectionné avec le jeu de données actuel. Les en-têtes du nouveau fichier doivent correspondre à ceux du fichier existant.
 
 Exemple :
 
-bash
+```bash
 Copier le code
 Script_Perso: add
 Sélectionnez un fichier en entrant son numéro dans la liste affichée.
 
-3. Afficher les données actuelles
+### 3. Afficher les données actuelles
 Commande : view
 
 Description : Affiche les données actuelles dans un format tabulaire bien aligné pour une lecture facile.
 
 Exemple :
 
-bash
+```bash
 Copier le code
 Script_Perso: view
 
-4. Trier les données
+### 4. Trier les données
 Commande : sort
 Description : Trie les données par une colonne spécifiée. Vous serez invité à :
 Choisir un numéro de colonne.
 Décider si le tri doit être effectué dans l'ordre inverse.
 Exemple :
-bash
+
+```bash
 Copier le code
 Script_Perso: sort
 
-5. Exporter les données
+### 5. Exporter les données
 Commande : exporter
 
 Description : Exporte les données actuelles dans un nouveau fichier CSV. Vous serez invité à fournir un nom de fichier.
 
 Exemple :
 
-bash
+```bash
 Copier le code
 Script_Perso: unload
 Nom du fichier à exporter : données_triées.csv
@@ -98,7 +102,7 @@ Incompatibilité des en-têtes : Si les en-têtes d'un fichier CSV à ajouter ne
 Entrée invalide : Le shell valide les entrées numériques lorsque cela est nécessaire.
 Exemples
 Exemple : Ajouter et afficher un fichier CSV
-bash
+```bash
 Copier le code
 Script_Perso: ajouter
 1. fichier1.csv
@@ -106,7 +110,7 @@ Script_Perso: ajouter
 Numéro du fichier à ajouter : 1
 Puis, affichez les données :
 
-bash
+```bash
 Copier le code
 Script_Perso: afficher
 Nom                 | Valeur1     | Valeur2     | Catégorie      | Tag       
@@ -116,7 +120,7 @@ Oranges              | 85.0       | 0.58        | Fruits         | sante
 Exemple : Trier les données
 Trier par une colonne (par exemple, Valeur1) :
 
-bash
+```bash
 Copier le code
 Script_Perso: trier
 1. Nom
