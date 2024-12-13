@@ -24,11 +24,11 @@ Placez le fichier main.py et lib.py ainsi que tous les fichiers CSV avec lesquel
 
 ### 3. Lancer le script
 Exécutez le script via un terminal ou une invite de commande :
-
-
+copier le code
 ```bash
 Copier le code
 python main.py
+```
 Guide d'utilisation
 Une fois le script lancé, vous verrez l'invite suivante : Script_Perso:. À partir de là, vous pouvez utiliser les commandes suivantes :
 
@@ -42,6 +42,7 @@ Exemple :
 ```bash
 Copier le code
 Script_Perso: exit
+```
 
 ### 2. Ajouter un fichier CSV
 Commande : add
@@ -53,6 +54,7 @@ Exemple :
 ```bash
 Copier le code
 Script_Perso: add
+```
 Sélectionnez un fichier en entrant son numéro dans la liste affichée.
 
 ### 3. Afficher les données actuelles
@@ -65,17 +67,18 @@ Exemple :
 ```bash
 Copier le code
 Script_Perso: view
+```
 
 ### 4. Trier les données
 Commande : sort
 Description : Trie les données par une colonne spécifiée. Vous serez invité à :
 Choisir un numéro de colonne.
-Décider si le tri doit être effectué dans l'ordre inverse.
 Exemple :
 
 ```bash
 Copier le code
 Script_Perso: sort
+```
 
 ### 5. Exporter les données
 Commande : exporter
@@ -87,6 +90,7 @@ Exemple :
 ```bash
 Copier le code
 Script_Perso: unload
+```
 Nom du fichier à exporter : données_triées.csv
 Structure des fichiers
 L'application repose sur une bibliothèque de soutien lib.py pour gérer les opérations CSV. Ce fichier doit inclure les fonctions suivantes :
@@ -105,6 +109,8 @@ Exemple : Ajouter et afficher un fichier CSV
 ```bash
 Copier le code
 Script_Perso: ajouter
+```
+
 1. fichier1.csv
 2. fichier2.csv
 Numéro du fichier à ajouter : 1
@@ -113,21 +119,25 @@ Puis, affichez les données :
 ```bash
 Copier le code
 Script_Perso: afficher
+
 Nom                 | Valeur1     | Valeur2     | Catégorie      | Tag       
 ---------------------------------------------------------------------------  
 Pommes               | 50.0       | 0.5         | Fruits         | sante     
-Oranges              | 85.0       | 0.58        | Fruits         | sante     
+Oranges              | 85.0       | 0.58        | Fruits         | sante
+```
 Exemple : Trier les données
 Trier par une colonne (par exemple, Valeur1) :
 
 ```bash
 Copier le code
 Script_Perso: trier
+```
 1. Nom
 2. Valeur1
 3. Valeur2
 4. Catégorie
 5. Tag
 Numéro de la colonne à trier : 2
-Le tri doit-il être inversé ?(o/n) : n
-Puis, affichez les données triées :
+Puis, affichez les données triées 
+
+
