@@ -95,17 +95,18 @@ Nom du fichier à exporter : données_triées.csv
 Structure des fichiers
 L'application repose sur une bibliothèque de soutien lib.py pour gérer les opérations CSV. Ce fichier doit inclure les fonctions suivantes :
 
-charger_csv(fichier) : Fonction pour lire un fichier CSV et renvoyer son en-tête et ses données.
+add(fichier) : Fonction pour lire un fichier CSV et renvoyer son en-tête et ses données.
 verifier_egalite(en_tete1, en_tete2) : Fonction pour vérifier si deux en-têtes de fichiers CSV correspondent.
-trier_donnees(donnees, en_tete, colonne, inverse) : Fonction pour trier les données par une colonne spécifiée.
-ecrire_csv(nom_fichier, donnees, en_tete) : Fonction pour écrire le jeu de données dans un fichier CSV.
-Assurez-vous que lib.py est dans le même répertoire que script_perso_shell.py.
+sort(donnees, en_tete, colonne, inverse) : Fonction pour trier les données par une colonne spécifiée.
+unload(nom_fichier, donnees, en_tete) : Fonction pour écrire le jeu de données dans un fichier CSV.
+Assurez-vous que lib.py est dans le même répertoire que main.py.
 
 Gestion des erreurs
 Incompatibilité des en-têtes : Si les en-têtes d'un fichier CSV à ajouter ne correspondent pas à ceux du jeu de données actuel, une erreur sera levée.
 Entrée invalide : Le shell valide les entrées numériques lorsque cela est nécessaire.
 Exemples
 Exemple : Ajouter et afficher un fichier CSV
+
 ```bash
 Copier le code
 Script_Perso: ajouter
